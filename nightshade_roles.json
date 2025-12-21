@@ -1,0 +1,100 @@
+{
+    "roles": [
+        {
+            "id": "ai-alchemist",
+            "title": "AI Alchemist",
+            "tagline": "Forging synthetic minds",
+            "description": "You train models, fine-tune large language models, and experiment with intelligent systems beyond the known limits.",
+            "focus": [
+                "Model training",
+                "LLM fine-tuning",
+                "RAG systems",
+                "Autonomous agents"
+            ],
+            "tech_stack": [
+                "PyTorch",
+                "LLMs",
+                "RAG",
+                "Agents"
+            ],
+            "core_docs": {
+                "pytorch": "https://pytorch.org/docs/stable/index.html",
+                "huggingface": "https://huggingface.co/docs",
+                "langchain": "https://python.langchain.com/docs/",
+                "openai": "https://platform.openai.com/docs"
+            }
+        },
+        {
+            "id": "frontend-architect",
+            "title": "Frontend Architect",
+            "tagline": "Constructing the visual interface of the Order",
+            "description": "You build high-performance, immersive portals that translate complex systems into elegant visual experiences.",
+            "focus": [
+                "UI architecture",
+                "3D web experiences",
+                "Performance optimization",
+                "Design systems"
+            ],
+            "tech_stack": [
+                "React",
+                "WebGL",
+                "Three.js",
+                "UI/UX"
+            ],
+            "core_docs": {
+                "react": "https://react.dev/learn",
+                "threejs": "https://threejs.org/docs/",
+                "webgl": "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API",
+                "uiux": "https://www.nngroup.com/articles/"
+            }
+        },
+        {
+            "id": "devops-warden",
+            "title": "DevOps Warden",
+            "tagline": "Keeper of the infrastructure",
+            "description": "You ensure systems remain resilient, scalable, and never fall into the void of downtime.",
+            "focus": [
+                "Infrastructure automation",
+                "Cloud deployment",
+                "Monitoring",
+                "CI/CD pipelines"
+            ],
+            "tech_stack": [
+                "Docker",
+                "Kubernetes",
+                "AWS",
+                "CI/CD"
+            ],
+            "core_docs": {
+                "docker": "https://docs.docker.com/",
+                "kubernetes": "https://kubernetes.io/docs/",
+                "aws": "https://docs.aws.amazon.com/",
+                "cicd": "https://docs.github.com/en/actions"
+            }
+        },
+        {
+            "id": "robotics-engineer",
+            "title": "Robotics Engineer",
+            "tagline": "Giving the machine spirit a body",
+            "description": "You bridge digital intelligence with the physical world through machines, sensors, and control systems.",
+            "focus": [
+                "Robot control systems",
+                "Embedded programming",
+                "Sensor integration",
+                "Autonomous movement"
+            ],
+            "tech_stack": [
+                "ROS",
+                "Embedded Systems",
+                "C++",
+                "Sensors"
+            ],
+            "core_docs": {
+                "ros": "https://docs.ros.org/",
+                "embedded": "https://www.embedded.com/",
+                "cpp": "https://en.cppreference.com/w/",
+                "sensors": "https://learn.sparkfun.com/"
+            }
+        }
+    ]
+}
