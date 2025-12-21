@@ -14,27 +14,27 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
       {/* Decorative Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-arcane-900 rounded-full blur-[120px] opacity-20 -z-10 animate-pulse"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] bg-arcane-900 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px] opacity-20 -z-10 animate-pulse"></div>
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="z-10 max-w-5xl"
+        className="z-10 max-w-5xl w-full px-2 sm:px-4"
       >
         <motion.h1 
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 animate-glow drop-shadow-2xl"
-          initial={{ letterSpacing: "1em", opacity: 0 }}
-          animate={{ letterSpacing: "0.1em", opacity: 1 }}
+          className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-wide sm:tracking-wider md:tracking-widest text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 animate-glow drop-shadow-2xl"
+          initial={{ letterSpacing: "0.5em", opacity: 0 }}
+          animate={{ letterSpacing: "0.05em", opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           NIGHTSHADE
         </motion.h1>
 
         <motion.h2 
-          className="font-body text-lg md:text-xl mt-8 text-arcane-300 font-light tracking-[0.2em] uppercase"
+          className="font-body text-sm sm:text-base md:text-lg lg:text-xl mt-4 sm:mt-6 md:mt-8 text-arcane-300 font-light tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] uppercase px-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         </motion.h2>
 
         <motion.p 
-          className="font-body text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed italic opacity-80"
+          className="font-body text-gray-400 mt-4 sm:mt-5 md:mt-6 max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed italic opacity-80 px-2 sm:px-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -52,26 +52,26 @@ const Hero: React.FC = () => {
         </motion.p>
 
         <motion.div 
-          className="flex flex-col sm:flex-row gap-6 justify-center mt-12"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mt-8 sm:mt-10 md:mt-12 px-4 sm:px-0"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 0.8 }}
         >
           <button 
             onClick={scrollToInitiation}
-            className="group relative px-8 py-3 bg-transparent border border-arcane-500 text-arcane-300 font-display font-bold tracking-wider hover:bg-arcane-500/10 transition-all duration-300 overflow-hidden"
+            className="group relative px-6 sm:px-8 py-3 bg-transparent border border-arcane-500 text-arcane-300 font-display font-bold text-sm sm:text-base tracking-wider hover:bg-arcane-500/10 transition-all duration-300 overflow-hidden w-full sm:w-auto"
           >
             <div className="absolute inset-0 w-0 bg-arcane-500 transition-all duration-[250ms] ease-out group-hover:w-full opacity-10"></div>
-            <span className="relative flex items-center gap-2">
+            <span className="relative flex items-center justify-center gap-2">
               <Sparkles className="w-4 h-4" /> Begin Initiation
             </span>
           </button>
 
           <button 
             onClick={scrollToManifesto}
-            className="group px-8 py-3 bg-night-800 text-white border border-white/10 font-display font-bold tracking-wider hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(255,255,255,0.05)]"
+            className="group px-6 sm:px-8 py-3 bg-night-800 text-white border border-white/10 font-display font-bold text-sm sm:text-base tracking-wider hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(255,255,255,0.05)] w-full sm:w-auto"
           >
-            <span className="flex items-center gap-2">
+            <span className="flex items-center justify-center gap-2">
                 <Scroll className="w-4 h-4" /> Read the Manifesto
             </span>
           </button>
@@ -79,12 +79,12 @@ const Hero: React.FC = () => {
       </motion.div>
 
       <motion.div 
-        className="absolute bottom-10 z-10 cursor-pointer text-gray-500 hover:text-white transition-colors"
+        className="absolute bottom-6 sm:bottom-10 z-10 cursor-pointer text-gray-500 hover:text-white transition-colors"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
         onClick={scrollToManifesto}
       >
-        <ChevronDown size={32} />
+        <ChevronDown size={28} className="sm:w-8 sm:h-8" />
       </motion.div>
     </section>
   );
