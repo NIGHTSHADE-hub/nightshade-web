@@ -4,6 +4,7 @@ import ParticleBackground from "./components/ParticleBackground";
 import Home from "./components/Home";
 import EchoChamber from "./components/EchoChamber";
 import PathDetail from "./components/PathDetail";
+import MemberDetail from "./components/MemberDetail";
 
 const App: React.FC = () => {
 	return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/echo-chamber" element={<EchoChamber />} />
 					<Route path="/path/:pathId" element={<PathDetail />} />
+					<Route path="/member/:memberId" element={<MemberDetail />} />
 				</Routes>
 			</div>
 		</HashRouter>

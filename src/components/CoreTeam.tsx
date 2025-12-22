@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Github, Twitter, Cpu, Code2, ShieldCheck, Radio, User } from 'lucide-react';
 
 interface TeamMember {
+  id: string;
   name: string;
   role: string;
   codename: string;
@@ -13,6 +15,7 @@ interface TeamMember {
 
 const members: TeamMember[] = [
   {
+    id: "kaelen-v",
     name: "Kaelen V.",
     role: "Lead Architect",
     codename: "THE_ARCHITECT",
@@ -21,6 +24,7 @@ const members: TeamMember[] = [
     color: "border-arcane-500"
   },
   {
+    id: "lyra-n",
     name: "Lyra N.",
     role: "AI Research Head",
     codename: "NEURAL_WEAVER",
@@ -29,6 +33,7 @@ const members: TeamMember[] = [
     color: "border-neon-violet"
   },
   {
+    id: "marcus-d",
     name: "Marcus D.",
     role: "Security Ops",
     codename: "VOID_WALKER",
@@ -37,6 +42,7 @@ const members: TeamMember[] = [
     color: "border-emerald-500"
   },
   {
+    id: "elara-x",
     name: "Elara X.",
     role: "Hardware Interface",
     codename: "SIGNAL_MASTER",
@@ -68,15 +74,15 @@ const CoreTeam: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {members.map((member, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className={`group relative bg-night-800/40 backdrop-blur-sm border border-white/5 p-6 overflow-hidden hover:bg-night-800/60 transition-all duration-300`}
-            >
+            <Link to={`/member/${member.id}`} key={member.id}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -5 }}
+                className={`group relative bg-night-800/40 backdrop-blur-sm border border-white/5 p-6 overflow-hidden hover:bg-night-800/60 transition-all duration-300 cursor-pointer`}
+              >
               {/* Top accent line based on role color */}
               <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-current to-transparent opacity-50 group-hover:opacity-100 transition-opacity ${member.color.replace('border-', 'text-')}`}></div>
 
@@ -115,7 +121,8 @@ const CoreTeam: React.FC = () => {
               {/* Corner decorative elements */}
               <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-white/10 group-hover:border-arcane-500/50 transition-colors"></div>
               <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-white/10 group-hover:border-arcane-500/50 transition-colors"></div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>
