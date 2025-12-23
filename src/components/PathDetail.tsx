@@ -16,6 +16,7 @@ import {
 	X,
 	Sparkles,
 	User,
+	Smartphone,
 } from "lucide-react";
 import { GoogleGenAI } from "@google/genai";
 import ReactMarkdown from "react-markdown";
@@ -26,6 +27,7 @@ const iconMap: Record<string, React.ReactNode> = {
 	"frontend-architect": <Terminal className="w-12 h-12 text-cyan-400" />,
 	"devops-warden": <Network className="w-12 h-12 text-emerald-400" />,
 	"robotics-engineer": <CircuitBoard className="w-12 h-12 text-orange-400" />,
+	"mobile-sorcerer": <Smartphone className="w-12 h-12 text-blue-400" />,
 };
 
 const colorMap: Record<string, { primary: string; glow: string; border: string; bg: string }> = {
@@ -52,6 +54,12 @@ const colorMap: Record<string, { primary: string; glow: string; border: string; 
 		glow: "shadow-[0_0_30px_rgba(251,146,60,0.3)]",
 		border: "border-orange-400/50",
 		bg: "bg-orange-400/10",
+	},
+	"mobile-sorcerer": {
+		primary: "text-blue-400",
+		glow: "shadow-[0_0_30px_rgba(96,165,250,0.3)]",
+		border: "border-blue-400/50",
+		bg: "bg-blue-400/10",
 	},
 };
 
@@ -94,6 +102,18 @@ Be helpful, concise, and encouraging. Use terminology fitting the NightShade aes
 - Hardware-software integration
 
 Be helpful, concise, and encouraging. Use terminology fitting the NightShade aesthetic but prioritize clear explanations. If asked about something outside robotics, gently redirect to relevant topics.`,
+
+	"mobile-sorcerer": `You are the Mobile Sorcerer Guide, a skilled mentor for those walking the path of Mobile Development at NightShade. You help initiates understand:
+- Flutter framework and Dart programming language
+- Android native development with Kotlin and Java
+- Cross-platform app architecture and best practices
+- State management solutions (Provider, Riverpod, Bloc)
+- Firebase integration for backend services
+- UI/UX design for mobile applications
+- App performance optimization and testing
+- Publishing apps to Play Store and App Store
+
+Be helpful, concise, and encouraging. Use terminology fitting the NightShade aesthetic but prioritize clear explanations. If asked about something outside mobile development, gently redirect to relevant topics.`,
 };
 
 interface ChatMessage {

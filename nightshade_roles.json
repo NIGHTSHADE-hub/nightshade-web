@@ -95,6 +95,30 @@
                 "cpp": "https://en.cppreference.com/w/",
                 "sensors": "https://learn.sparkfun.com/"
             }
+        },
+        {
+            "id": "mobile-sorcerer",
+            "title": "Mobile Sorcerer",
+            "tagline": "Conjuring apps that live in pockets worldwide",
+            "description": "You wield Flutter and Android to craft seamless mobile experiences that feel native and perform flawlessly across platforms.",
+            "focus": [
+                "Cross-platform development",
+                "Native Android apps",
+                "State management",
+                "App performance optimization"
+            ],
+            "tech_stack": [
+                "Flutter",
+                "Dart",
+                "Android",
+                "Kotlin"
+            ],
+            "core_docs": {
+                "flutter": "https://docs.flutter.dev/",
+                "dart": "https://dart.dev/guides",
+                "android": "https://developer.android.com/docs",
+                "kotlin": "https://kotlinlang.org/docs/home.html"
+            }
         }
     ]
 }

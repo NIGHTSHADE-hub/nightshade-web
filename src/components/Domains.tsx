@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FlaskConical, Terminal, CircuitBoard, Network } from "lucide-react";
+import { FlaskConical, Terminal, CircuitBoard, Network, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Path } from "../types";
 
@@ -34,6 +34,13 @@ const paths: Path[] = [
 		icon: <CircuitBoard className="w-8 h-8 text-orange-400" />,
 		description: "Bridging the digital and physical. You give the machine spirit a body.",
 		skills: ["ROS", "Embedded", "C++", "Sensors"],
+	},
+	{
+		id: "mobile-sorcerer",
+		title: "Mobile Sorcerer",
+		icon: <Smartphone className="w-8 h-8 text-blue-400" />,
+		description: "Wielding Flutter and Android to conjure apps that live in pockets worldwide.",
+		skills: ["Flutter", "Dart", "Android", "Kotlin"],
 	},
 ];
 

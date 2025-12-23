@@ -15,40 +15,50 @@ interface TeamMember {
 
 const members: TeamMember[] = [
   {
-    id: "kaelen-v",
-    name: "Kaelen V.",
-    role: "Lead Architect",
-    codename: "THE_ARCHITECT",
-    description: "Orchestrating the master plan. Focusing on scalable infrastructure and system coherence.",
-    icon: <Code2 className="w-6 h-6" />,
-    color: "border-arcane-500"
-  },
+  id: "nitesh-badgujar",
+  name: "Nitesh Badgujar",
+  role: "Founder & AIML Lead",
+  codename: "THE_SHADEMASTER",
+  description: "Leading NightShade’s vision. Building intelligent systems using AI, ML, and Generative technologies.",
+  icon: <img src="src\assets\images\om.jpg" alt="Kaelen V." className="w-full h-full object-cover rounded-full" />,
+  color: "border-arcane-500"
+},
+
   {
-    id: "lyra-n",
-    name: "Lyra N.",
-    role: "AI Research Head",
-    codename: "NEURAL_WEAVER",
-    description: "Training the synthetic minds. Specialist in LLMs, agents, and emergent behavior.",
-    icon: <Cpu className="w-6 h-6" />,
+    id: 'atharva-jangale',
+name: "Atharva Jangale",
+role: "DEVOPS",
+codename: "THE_CATALYST",
+description: "Accelerating ideas into action. Connecting people, technology, and execution to build real momentum.",
+   icon: <img src="src\assets\images\Aj.jpg" alt="Atharva Jangale" className="w-full h-full object-cover rounded-full" />,
     color: "border-neon-violet"
   },
-  {
-    id: "marcus-d",
-    name: "Marcus D.",
-    role: "Security Ops",
-    codename: "VOID_WALKER",
-    description: "Ensuring zero-trust architecture. If you can see him, it's already too late.",
-    icon: <ShieldCheck className="w-6 h-6" />,
-    color: "border-emerald-500"
-  },
+ {
+  id: "om-satote",
+  name: "Om Satote",
+  role: "Full Stack Web Developer",
+  codename: "DEVILLUCIFER",
+  description: "Building intelligent, scalable web solutions using modern web technologies and AI.",
+  icon: <img src="src\assets\images\na.jpg" alt="Om Satote" className="w-full h-full object-cover rounded-full" />,
+  color: "border-indigo-500"
+},
   {
     id: "elara-x",
     name: "Elara X.",
     role: "Hardware Interface",
     codename: "SIGNAL_MASTER",
     description: "Bridging the gap between digital code and physical reality. Robotics and IoT.",
-    icon: <Radio className="w-6 h-6" />,
+   icon: <img src="src\assets\images\na.jpg" alt="Kaelen V." className="w-full h-full object-cover rounded-full" />,
     color: "border-orange-500"
+  },
+  {
+    id: "atharva-k",
+    name: "Atharva Kale",
+    role: "Flutter & Android Developer",
+    codename: "CODE_REACTIVE",
+    description: "Building seamless cross-platform interfaces with integrated machine learning capabilities.",
+    icon: <img src="src\assets\images\na.jpg" alt="Atharva Kale" className="w-full h-full object-cover rounded-full" />,
+    color: "border-blue-500"
   }
 ];
 
@@ -59,7 +69,7 @@ const CoreTeam: React.FC = () => {
        <div className="absolute inset-0 bg-[linear-gradient(rgba(20,20,30,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(20,20,30,0.5)_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <motion.div 
+             <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

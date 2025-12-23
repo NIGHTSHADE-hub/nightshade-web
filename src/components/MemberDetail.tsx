@@ -17,78 +17,166 @@ interface MemberData {
   location: string;
   joined: string;
   email: string;
+  socials: {
+    github?: string;
+    twitter?: string;
+    linkedin?: string;
+  };
 }
 
 const membersData: Record<string, MemberData> = {
-  'kaelen-v': {
-    name: "Kaelen V.",
-    role: "Lead Architect",
-    codename: "THE_ARCHITECT",
-    description: "Orchestrating the master plan. Focusing on scalable infrastructure and system coherence.",
-    icon: <Code2 className="w-10 h-10" />,
-    color: "border-arcane-500",
-    fullBio: "Kaelen has been building distributed systems for over a decade. Starting from humble beginnings in open-source communities, they rose through the ranks of various tech giants before deciding to forge their own path. Now, as the Lead Architect of Nightshade, Kaelen orchestrates the intricate dance of microservices, APIs, and infrastructure that powers our operations. Their philosophy: 'Code is poetry, but architecture is the universe it inhabits.'",
-    skills: ["System Design", "Distributed Systems", "Kubernetes", "Rust", "Go", "Cloud Architecture", "API Design"],
-    projects: [
-      { name: "Project Nexus", description: "Core infrastructure backbone handling 10M+ requests/day" },
-      { name: "Void Engine", description: "Custom orchestration layer for AI workloads" },
-      { name: "Shadow Protocol", description: "Encrypted communication framework for internal systems" }
-    ],
-    stats: [
-      { label: "Systems Built", value: "47" },
-      { label: "Uptime Record", value: "99.99%" },
-      { label: "Code Reviews", value: "2,340" }
-    ],
-    location: "Distributed",
-    joined: "2021",
-    email: "architect@nightshade.dev"
-  },
-  'lyra-n': {
-    name: "Lyra N.",
-    role: "AI Research Head",
-    codename: "NEURAL_WEAVER",
-    description: "Training the synthetic minds. Specialist in LLMs, agents, and emergent behavior.",
-    icon: <Cpu className="w-10 h-10" />,
-    color: "border-neon-violet",
-    fullBio: "Lyra's fascination with artificial intelligence began when they first encountered neural networks in graduate school. Since then, they've published numerous papers on emergent behavior in multi-agent systems and pioneered new approaches to training large language models. At Nightshade, Lyra leads our AI research division, pushing the boundaries of what synthetic minds can achieve. Their mantra: 'Intelligence is not created, it is cultivated.'",
-    skills: ["Machine Learning", "PyTorch", "Transformers", "Reinforcement Learning", "Multi-Agent Systems", "Python", "CUDA"],
-    projects: [
-      { name: "Synthetic Oracle", description: "Proprietary LLM fine-tuned for specialized domains" },
-      { name: "Agent Swarm", description: "Multi-agent coordination framework for complex tasks" },
-      { name: "Neural Forge", description: "Custom training infrastructure for large-scale models" }
-    ],
-    stats: [
-      { label: "Models Trained", value: "156" },
-      { label: "Papers Published", value: "23" },
-      { label: "GPU Hours", value: "1.2M" }
-    ],
-    location: "The Cloud",
-    joined: "2022",
-    email: "neural@nightshade.dev"
-  },
-  'marcus-d': {
-    name: "Marcus D.",
-    role: "Security Ops",
-    codename: "VOID_WALKER",
-    description: "Ensuring zero-trust architecture. If you can see him, it's already too late.",
-    icon: <ShieldCheck className="w-10 h-10" />,
-    color: "border-emerald-500",
-    fullBio: "Marcus spent years in the shadows of cybersecurity, working with government agencies and private security firms before joining Nightshade. Their expertise in offensive security gives them a unique perspective on defense—they think like an attacker to build impenetrable systems. Marcus has a simple philosophy: 'Trust nothing, verify everything, and always have an exit strategy.'",
-    skills: ["Penetration Testing", "Zero Trust Architecture", "Cryptography", "Incident Response", "Threat Modeling", "Rust", "Assembly"],
-    projects: [
-      { name: "Fortress Protocol", description: "Zero-trust security framework for all internal systems" },
-      { name: "Shadow Scanner", description: "Automated vulnerability detection and patching system" },
-      { name: "Phantom Auth", description: "Multi-layer authentication system with biometric support" }
-    ],
-    stats: [
-      { label: "Vulns Patched", value: "892" },
-      { label: "Attacks Blocked", value: "∞" },
-      { label: "Security Audits", value: "67" }
-    ],
-    location: "Unknown",
-    joined: "2021",
-    email: "void@nightshade.dev"
-  },
+  'nitesh-badgujar': {
+  name: "Nitesh Badgujar",
+  role: "Founder & AIML Lead",
+  codename: "THE_SHADEMASTER",
+  description: "Driving NightShade’s vision. Building intelligent systems with AI, ML, and Generative models.",
+  icon: <img src="src\assets\images\na.jpg" alt="Kaelen V." className="w-full h-full object-cover rounded-full" />,
+  color: "border-arcane-500",
+  fullBio: "Nitesh is an AIML and Generative AI enthusiast focused on building practical, future-ready systems. Starting as a curious learner exploring machine learning fundamentals, he quickly moved toward hands-on experimentation with AI models, system design, and product thinking. As the founder and lead of NightShade, Nitesh defines the technical direction of the team—bridging intelligence, automation, and dark-themed innovation. His philosophy: 'AI is not magic, but in the right hands, it feels like it.'",
+  skills: [
+    "Machine Learning",
+    "Deep Learning",
+    "Generative AI",
+    "Python",
+    "Data Structures",
+    "Model Building",
+    "AI System Design"
+  ],
+  projects: [
+    { 
+      name: "NightShade Core", 
+      description: "Foundation systems powering NightShade projects and experiments" 
+    },
+    { 
+      name: "Echo Chamber", 
+      description: "AI-powered conversational system with dark-tech personality" 
+    },
+    { 
+      name: "Image Super-Resolution AI", 
+      description: "Enhancing low-quality images using deep learning models (SRGAN / ESRGAN)" 
+    }
+  ],
+  stats: [
+    { label: "AI Models Built", value: "15+" },
+    { label: "Projects Led", value: "10+" },
+    { label: "Active Experiments", value: "Always" }
+  ],
+  location: "India",
+  joined: "2024",
+  email: "niteshbadgujar32@gmail.com",
+  socials: {
+    github: "https://github.com/NiteshBadgujar",
+      twitter: "https://x.com/NiteshBadg15562",
+      linkedin: "https://www.linkedin.com/in/nitesh-badgujar-8a5218329/"
+  }
+},
+
+  'atharva-jangale': {
+  name: "Atharva Jangale",
+  role: "Moderator & Core Member",
+  codename: "THE_CATALYST",
+  description: "Driving momentum, aligning people with purpose, and turning ideas into execution.",
+  icon: <Code2 className="w-10 h-10" />,
+  color: "border-arcane-500",
+  fullBio: "Atharva is a Computer Science engineering student with a strong passion for building meaningful tech and communities that actually ship. Known for bridging the gap between complex tech and real people, he plays a key role in shaping Night Shade’s culture, collaboration, and execution. From hackathons and workshops to AI-powered projects and modern web stacks, Atharva thrives at the intersection of leadership, learning, and action. His approach is simple: learn fast, build smarter, and help others level up along the way.",
+  skills: [
+    "Community Leadership",
+    "Web Development",
+    "Next.js",
+    "React",
+    "Firebase",
+    "AI Tooling",
+    "Git & GitHub",
+    "Cloud Fundamentals",
+    "System Thinking"
+  ],
+  projects: [
+    { name: "Night Shade Community", description: "Building a focused, high-signal tech community driven by learning and execution" },
+    { name: "AI Resume Generator", description: "Hackathon project focused on AI-driven personalization and usability" },
+    { name: "TripTuner", description: "AI-powered personalized travel itinerary generator" }
+  ],
+  stats: [
+    { label: "Events Organized", value: "10+" },
+    { label: "Projects Led", value: "8+" },
+    { label: "Community Members Impacted", value: "200+" }
+  ],
+  location: "India",
+  joined: "2024",
+  email: "atharvajangale778@gmail.com",
+  socials: {
+    github: "https://github.com/atharvajangale",
+    twitter: "https://twitter.com/atharvajangale",
+    linkedin: "https://linkedin.com/in/atharvajangale"
+  }
+},
+  'om-satote': {
+  name: "Om Satote",
+  role: "Full Stack Web Developer",
+  codename: "DEVILLUCIFER",
+  description: "Building intelligent, scalable web solutions powered by modern tech and AI.",
+  icon: <img src="src\assets\images\na.jpg" alt="Kaelen V." className="w-full h-full object-cover rounded-full" />,
+  color: "border-indigo-500",
+
+  fullBio: "Om Satote is a full stack web developer with a strong interest in building modern web applications, AI-powered systems, and innovative tech solutions. With hands-on experience across frontend technologies and exposure to backend, AI, and hardware-integrated projects, Om focuses on creating impactful, real-world applications. Driven by curiosity and continuous learning, Om blends creativity with technical skill to turn ideas into functional digital products.",
+
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "GitHub",
+    "Python",
+    "Java",
+    "C / C++",
+    "Full Stack Web Development"
+  ],
+
+  projects: [
+    {
+      name: "Kisan Scheme App",
+      description: "A web platform designed to help farmers easily access and understand government schemes."
+    },
+    {
+      name: "AI-Powered Resume Builder with ATS System",
+      description: "An intelligent resume builder that creates ATS-friendly resumes using AI-based analysis."
+    },
+    {
+      name: "SonicLink Music App",
+      description: "A responsive music streaming application with playlist management and modern UI."
+    },
+    {
+      name: "Cabin Automation System",
+      description: "An automation project enabling smart control of cabin appliances using hardware and sensors."
+    },
+    {
+      name: "Human Following Robot",
+      description: "A robotics system capable of detecting and following humans using sensors and vision logic."
+    },
+    {
+      name: "AI Script Writer Chatbot",
+      description: "An AI chatbot that generates scripts and creative content based on user input."
+    },
+    {
+      name: "Object Detection System",
+      description: "A computer vision application that detects and classifies objects in images and live video."
+    }
+  ],
+
+  stats: [
+    { label: "Major Projects", value: "7+" },
+    { label: "Core Focus", value: "Full Stack & AI" },
+    { label: "Tech Domains", value: "Web, AI, Robotics" }
+  ],
+
+  location: "Nashik",
+  joined: "2025",
+  email: "omsatote142005@gmail.com",
+
+  socials: {
+    github: "https://github.com/omsatote",
+    linkedin: "https://www.linkedin.com/in/om-satote-a7aa6a325/"
+  }
+},
   'elara-x': {
     name: "Elara X.",
     role: "Hardware Interface",
@@ -110,7 +198,40 @@ const membersData: Record<string, MemberData> = {
     ],
     location: "The Workshop",
     joined: "2022",
-    email: "signal@nightshade.dev"
+    email: "signal@nightshade.dev",
+    socials: {
+      github: "https://github.com/signalmaster",
+      twitter: "https://twitter.com/signalmaster",
+      linkedin: "https://linkedin.com/in/signalmaster"
+    }
+  },
+ 'atharva-k': {
+    name: "Atharva Kale",
+    role: "Flutter & Android Developer",
+    codename: "CODE_REACTIVE",
+    description: "Building seamless cross-platform interfaces with integrated machine learning capabilities.",
+    icon: <img src="src\assets\images\na.jpg" alt="Kiran M." className="w-full h-full object-cover rounded-full" />,
+    color: "border-sky-400",
+    fullBio: "Atharva is a developer focused on the Flutter ecosystem and native Android integration. He specializes in creating responsive user interfaces that don't just look good, but perform complex tasks like on-device image processing and real-time data syncing. By combining Dart with his background in Computer Vision, he builds mobile apps that are intelligent, fast, and scalable.",
+    skills: ["Flutter", "Dart", "Android Studio", "Firebase", "SQLite", "TFLite", "Git/GitHub", "Provider/Riverpod"],
+    projects: [
+      { name: "SmileScan App", description: "Mobile diagnostic tool built with Flutter and TensorFlow Lite for automated dental analysis." },
+      { name: "Biometric Portal", description: "Secure Android implementation of face-recognition auth using custom Flutter MethodChannels." },
+      { name: "HCI Mobile Suite", description: "Experimenting with MediaPipe integration in Flutter for gesture-based app navigation." }
+    ],
+    stats: [
+      { label: "Builds Shipped", value: "15+" },
+      { label: "Crash-Free Rate", value: "99%" },
+      { label: "Avg. Frame Rate", value: "60fps" }
+    ],
+    location: "Pune, India",
+    joined: "2024",
+    email: "atharvakale31@gmail.com",
+    socials: {
+      github: "https://github.com/Atharvakale11",
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/atharva-kale-411980374"
+    }
   }
 };
 
@@ -252,9 +373,15 @@ const MemberDetail: React.FC = () => {
           transition={{ delay: 0.3 }}
           className="flex justify-center gap-6"
         >
-          <a href="#" className="text-gray-500 hover:text-white transition-colors"><Github size={20} /></a>
-          <a href="#" className="text-gray-500 hover:text-white transition-colors"><Twitter size={20} /></a>
-          <a href="#" className="text-gray-500 hover:text-white transition-colors"><Linkedin size={20} /></a>
+          {member.socials.github && (
+            <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors"><Github size={20} /></a>
+          )}
+          {member.socials.twitter && (
+            <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors"><Twitter size={20} /></a>
+          )}
+          {member.socials.linkedin && (
+            <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors"><Linkedin size={20} /></a>
+          )}
         </motion.div>
       </div>
     </div>
