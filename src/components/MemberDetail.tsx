@@ -226,7 +226,7 @@ const membersData: Record<string, MemberData> = {
     ],
     location: "Pune, India",
     joined: "2024",
-    email: "atharvakale31@gmail.com",
+    email: "atharvakale1126@gmail.com",
     socials: {
       github: "https://github.com/Atharvakale11",
       twitter: "",
